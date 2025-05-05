@@ -1,3 +1,5 @@
+# azure-pipelines.yml
+
 trigger:
 - main
 
@@ -5,7 +7,7 @@ pool:
   vmImage: ubuntu-latest
 
 steps:
-- checkout: self  # 👈 Ensures code is available in the working directory
+- checkout: self  # ✅ Ensures your repo is cloned and files are present
 
 - task: NodeTool@0
   inputs:

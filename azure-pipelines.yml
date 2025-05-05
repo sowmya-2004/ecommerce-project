@@ -1,5 +1,3 @@
-# azure-pipelines.yml
-
 trigger:
 - main
 
@@ -7,6 +5,8 @@ pool:
   vmImage: ubuntu-latest
 
 steps:
+- checkout: self  # 👈 Ensures code is available in the working directory
+
 - task: NodeTool@0
   inputs:
     versionSpec: '18.x'

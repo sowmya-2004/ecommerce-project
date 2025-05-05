@@ -1,0 +1,55 @@
+.navbar {
+    background-color: rgba(0, 0, 0, 0.8); /* slightly transparent dark background */
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 24px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .navbar a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 12px;
+    font-weight: 500;
+    transition: color 0.3s;
+  }
+  
+  .navbar a:hover {
+    color: #ffcc00; /* highlight on hover */
+  }
+  
+  .navbar .brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ffcc00;
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar .cart-count {
+    background-color: #444;
+    padding: 2px 8px;
+    border-radius: 8px;
+    font-size: 0.8rem;
+    margin-left: 5px;
+  }
+  
+  .navbar .login-btn {
+    border: 1px solid #fff;
+    padding: 6px 12px;
+    border-radius: 8px;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .navbar .login-btn:hover {
+    background-color: #ffcc00;
+    color: #000;
+  }
+  
